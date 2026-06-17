@@ -5,7 +5,7 @@ import altair as alt
 st.title("GPA Calculator")
 st.subheader("This is a simple GPA calculator that calculates your GPA based on your marks and credits for each course.\n", divider= "red")
 st.subheader("Enter your course details to calculate your GPA")
-st.selectbox("select your year of study", ["<Select>","1st year", "2nd year", "3rd year", "4th year"])
+st.selectbox("Select your year of study", ["<Select>","1st year", "2nd year", "3rd year", "4th year"])
 grade_system=st.selectbox("Select your grade system", ["<Select>","Absolute Grading", "Relative Grading"])
 scale=st.selectbox("Select your grading scale", ["<Select>","10-point scale", "4-point scale"])
 subjects= st.number_input("Enter no. of subjects", min_value=1, max_value=10, step=1)
